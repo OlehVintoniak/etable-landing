@@ -1,4 +1,15 @@
 <section class="banner" aria-label="Company introduction">
+  @if (videoSrc()) {
+    <video
+      class="banner__video"
+      [src]="videoSrc()"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+  }
   <div class="banner__inner">
     <h1 class="banner__name">{{ company().name }}</h1>
     <p class="banner__tagline">{{ company().tagline }}</p>

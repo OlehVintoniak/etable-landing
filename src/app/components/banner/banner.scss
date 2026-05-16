@@ -3,12 +3,35 @@
   min-height: 100svh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    background: rgba(58, 37, 16, 0.55);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
 
   &__inner {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--space-xl) var(--space-md);
     width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   &__name {
@@ -25,7 +48,7 @@
     font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     font-style: italic;
     font-weight: 300;
-    color: var(--color-stone);
+    color: var(--color-birch);
     border-left: 2px solid var(--color-resin);
     padding-left: var(--space-sm);
     margin-bottom: var(--space-lg);

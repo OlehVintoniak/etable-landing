@@ -11,6 +11,7 @@ import { CompanyInfo } from '../../models/company.model';
 })
 export class BannerComponent {
   company = input.required<CompanyInfo>();
+  videoSrc = input<string>();
 
   private platformId = inject(PLATFORM_ID);
 
