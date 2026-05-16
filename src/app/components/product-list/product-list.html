@@ -1,0 +1,11 @@
+<section id="products" class="product-list" aria-label="Our tables">
+  @if (products().length > 0) {
+    <div class="product-list__grid">
+      @for (product of products(); track product.id; let first = $first) {
+        <app-product-card [product]="product" [priority]="first" />
+      }
+    </div>
+  } @else {
+    <p class="product-list__empty">No tables available at the moment. Please check back soon.</p>
+  }
+</section>

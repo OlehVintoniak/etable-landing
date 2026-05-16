@@ -1,0 +1,39 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__wordmark">
+      <span class="footer__name">{{ companyName() }}</span>
+      <span class="footer__sub">Ukrainian Hardwood Tables</span>
+    </div>
+
+    <div class="footer__contact" aria-label="Contact information">
+      <h2 class="footer__section-heading">Contact</h2>
+      <ul class="footer__contact-list">
+        <li>
+          <a [href]="'mailto:' + contact().email" class="footer__link">
+            {{ contact().email }}
+          </a>
+        </li>
+        <li>
+          <a [href]="'tel:' + contact().phone" class="footer__link">
+            {{ contact().phone }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__social" aria-label="Social media">
+      <h2 class="footer__section-heading">Follow</h2>
+      <a [href]="instagram().url"
+         class="footer__link footer__link--instagram"
+         target="_blank"
+         rel="noopener noreferrer"
+         [attr.aria-label]="instagram().label">
+        {{ instagram().label }}
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__copy">Handmade · Ukraine · Est. 2026</span>
+  </div>
+</footer>
