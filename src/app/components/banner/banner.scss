@@ -1,0 +1,65 @@
+.banner {
+  background-color: var(--color-bark);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+    width: 100%;
+  }
+
+  &__name {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 700;
+    color: var(--color-birch);
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+  }
+
+  &__tagline {
+    font-family: var(--font-body);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--color-stone);
+    border-left: 2px solid var(--color-resin);
+    padding-left: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+  }
+
+  &__cta {
+    display: inline-block;
+    background-color: var(--color-resin);
+    color: var(--color-bark);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: var(--space-sm) var(--space-lg);
+    border: none;
+    cursor: pointer;
+    min-height: 48px;
+    transition: opacity 0.2s ease;
+    width: 100%;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.85;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-birch);
+      outline-offset: 2px;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}

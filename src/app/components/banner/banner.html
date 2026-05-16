@@ -1,0 +1,9 @@
+<section class="banner" aria-label="Company introduction">
+  <div class="banner__inner">
+    <h1 class="banner__name">{{ company().name }}</h1>
+    <p class="banner__tagline">{{ company().tagline }}</p>
+    <button class="banner__cta" type="button" (click)="scrollToProducts()">
+      {{ company().ctaLabel }}
+    </button>
+  </div>
+</section>

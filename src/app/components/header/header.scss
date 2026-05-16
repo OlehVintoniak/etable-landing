@@ -1,0 +1,25 @@
+.header {
+  background-color: var(--color-bark);
+  width: 100%;
+
+  &__inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-sm) var(--space-md);
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-birch);
+    letter-spacing: 0.05em;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}

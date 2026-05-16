@@ -1,0 +1,31 @@
+:root {
+  // Colour tokens
+  --color-bark: #3a2510;
+  --color-oak: #5c3d1e;
+  --color-walnut: #7a5230;
+  --color-resin: #c8a97a;
+  --color-birch: #f0e8d8;
+  --color-cream: #faf6ef;
+  --color-stone: #8c7b6b;
+  --color-moss: #4a5240;
+  --color-epoxy: #b8d4c8;
+
+  // Font family tokens
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-mono: 'DM Mono', monospace;
+
+  // Spacing tokens
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  // Radius tokens
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  // Max-width container
+  --max-width: 1280px;
+}
