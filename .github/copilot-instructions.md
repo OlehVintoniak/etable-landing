@@ -57,5 +57,5 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan:
-[specs/002-banner-video-background/plan.md](../specs/002-banner-video-background/plan.md)
+[specs/003-landing-card-component/plan.md](../specs/003-landing-card-component/plan.md)
 <!-- SPECKIT END -->

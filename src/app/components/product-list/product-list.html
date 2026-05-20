@@ -1,8 +1,12 @@
 <section id="products" class="product-list" aria-label="Our tables">
   @if (products().length > 0) {
-    <div class="product-list__grid">
-      @for (product of products(); track product.id; let first = $first) {
-        <app-product-card [product]="product" [priority]="first" />
+    <div class="product-list__stack">
+      @for (product of products(); track product.id; let idx = $index) {
+        <app-landing-card
+          [product]="product"
+          [reversed]="idx % 2 !== 0"
+          [priority]="idx === 0"
+        />
       }
     </div>
   } @else {
