@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Product } from '../../models/product.model';
-import { ProductCardComponent } from '../product-card/product-card';
+import { LandingCardComponent } from '../landing-card/landing-card';
 
 @Component({
   selector: 'app-product-list',
-  imports: [ProductCardComponent],
+  imports: [LandingCardComponent],
   templateUrl: './product-list.html',
   styleUrl: './product-list.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

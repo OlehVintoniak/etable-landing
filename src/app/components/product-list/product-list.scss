@@ -6,20 +6,12 @@
     padding: var(--space-xl) var(--space-md);
   }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+  &__stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
     max-width: var(--max-width);
     margin: 0 auto;
-
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (min-width: 1280px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 
   &__empty {

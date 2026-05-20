@@ -1,0 +1,18 @@
+<div class="landing-card__image">
+  <img
+    [ngSrc]="product().imageSrc"
+    [alt]="product().imageAlt"
+    width="800"
+    height="600"
+    [priority]="priority()"
+  />
+</div>
+<div class="landing-card__details">
+  <h2 class="landing-card__name">{{ product().name }}</h2>
+  <dl class="landing-card__meta">
+    <dt>Material</dt>
+    <dd>{{ product().material }}</dd>
+    <dt>Size</dt>
+    <dd>{{ product().width }} &times; {{ product().length }} {{ product().unit }}</dd>
+  </dl>
+</div>
