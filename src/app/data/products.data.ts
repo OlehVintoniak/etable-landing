@@ -4,7 +4,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'KOR-OAK-001',
     name: 'Світанок',
-    imageSrc: '/images/products/polissia.jpg',
+    imageSrc: 'images/products/polissia.jpg',
     imageAlt: 'Журнальний столик з флюрисцентною галькою.',
     material: 'Дуб, кам\'яна галька, флуоресцентна галька',
     price: 6500,
@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'KOR-WAL-002',
     name: 'Легінь',
-    imageSrc: '/images/products/carpathia.jpg',
+    imageSrc: 'images/products/carpathia.jpg',
     imageAlt: 'Журнальний столик з дуба та металевими ніжками.',
     material: 'Дуб',
     price: 7500,
@@ -26,7 +26,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'KOR-ELM-003',
     name: 'Плин',
-    imageSrc: '/images/products/dnipro.jpg',
+    imageSrc: 'images/products/dnipro.jpg',
     imageAlt: 'Журнальний столик з дуба та металевими ніжками.',
     material: 'Дуб',
     price: 5000,
