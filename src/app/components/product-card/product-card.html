@@ -10,10 +10,11 @@
   </div>
   <div class="product-card__info">
     <h2 class="product-card__name">{{ product().name }}</h2>
+    <p class="product-card__price">{{ product().price }} грн</p>
     <dl class="product-card__meta">
-      <dt>Material</dt>
+      <dt>Матеріал</dt>
       <dd>{{ product().material }}</dd>
-      <dt>Size</dt>
+      <dt>Розмір</dt>
       <dd>{{ product().width }} × {{ product().length }} {{ product().unit }}</dd>
     </dl>
   </div>

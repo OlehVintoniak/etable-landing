@@ -4,7 +4,8 @@ export interface Product {
   imageSrc: string;
   imageAlt: string;
   material: string;
+  price: number;
   width: number;
   length: number;
-  unit: 'cm';
+  unit: 'см';
 }

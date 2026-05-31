@@ -1,18 +1,18 @@
 import { CompanyInfo, ContactDetail, SocialMediaLink } from '../models/company.model';
 
 export const COMPANY_INFO: CompanyInfo = {
-  name: 'Korinna',
-  tagline: 'Handcrafted epoxy & hardwood tables rooted in Ukrainian nature.',
-  ctaLabel: 'View Our Tables',
+  name: 'Коріння',
+  tagline: 'Столи ручної роботи з епоксидної смоли та твердих порід дерева, вкорінені в українській природі.',
+  ctaLabel: 'Переглянути наші продукти',
   ctaTarget: '#products',
 };
 
 export const CONTACT: ContactDetail = {
-  email: 'hello@korinna.ua',
-  phone: '+380 99 000 0000',
+  email: 'korinna.in.ua@gmail.com',
+  phone: '+380 67 9693 717',
 };
 
 export const INSTAGRAM: SocialMediaLink = {
   url: 'https://www.instagram.com/korinna.tables',
-  label: 'Follow us on Instagram',
+  label: 'Слідкуйте за нами в Instagram',
 };

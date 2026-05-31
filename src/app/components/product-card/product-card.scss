@@ -30,6 +30,15 @@
     margin-bottom: var(--space-sm);
   }
 
+  &__price {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-oak);
+    margin-bottom: var(--space-sm);
+  }
+
   &__meta {
     display: grid;
     grid-template-columns: auto 1fr;
