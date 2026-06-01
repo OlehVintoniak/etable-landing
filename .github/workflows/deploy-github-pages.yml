@@ -34,7 +34,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build Angular app for GitHub Pages
-        run: npx ng build --configuration production --output-mode static --base-href "/etable-landing/"
+        run: npx ng build --configuration production --output-mode static
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
