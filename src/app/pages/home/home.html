@@ -1,4 +1,6 @@
 <app-header [companyName]="companyInfo.name" />
-<app-banner [company]="companyInfo" videoSrc="video/HeroBannerVideo.mp4" />
-<app-product-list [products]="products" />
+<main>
+  <app-banner [company]="companyInfo" videoSrc="video/HeroBannerVideo.mp4" />
+  <app-product-list [products]="products" />
+</main>
 <app-footer [contact]="contact" [instagram]="instagram" [companyName]="companyInfo.name" />
