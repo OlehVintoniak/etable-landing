@@ -7,6 +7,7 @@ import { COMPANY_INFO, CONTACT, INSTAGRAM } from '../../data/company.data';
 import { PRODUCTS } from '../../data/products.data';
 import { HOME_SEO_CONFIG } from '../../data/seo.data';
 import { SeoService } from '../../services/seo.service';
+import { AnalyticsService } from '../../services/analytics.service';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { SeoService } from '../../services/seo.service';
 })
 export class HomeComponent implements OnInit {
   private readonly seoService = inject(SeoService);
+  private readonly analyticsService = inject(AnalyticsService);
 
   companyInfo = COMPANY_INFO;
   contact = CONTACT;
@@ -25,5 +27,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.applyPageSeo(HOME_SEO_CONFIG);
+    this.analyticsService.init();
+    this.analyticsService.trackPageView('/');
   }
 }
