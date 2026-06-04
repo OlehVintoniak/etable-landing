@@ -1,3 +1,3 @@
 export const environment = {
-  googleAnalyticsId: 'G-XXXXXXXXXX',
+  googleAnalyticsId: 'SECRETS_GOOGLE_ANALYTICS_ID',
 };
