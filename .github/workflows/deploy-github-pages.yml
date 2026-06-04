@@ -33,6 +33,11 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Inject secrets
+        env:
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+        run: sed -i "s/SECRETS_GOOGLE_ANALYTICS_ID/${GOOGLE_ANALYTICS_ID}/g" src/environments/environment.ts
+
       - name: Build Angular app for GitHub Pages
         run: npx ng build --configuration production --output-mode static
 

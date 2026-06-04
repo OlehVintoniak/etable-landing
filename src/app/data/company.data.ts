@@ -13,6 +13,6 @@ export const CONTACT: ContactDetail = {
 };
 
 export const INSTAGRAM: SocialMediaLink = {
-  url: 'https://www.instagram.com/korinna.tables',
+  url: 'https://www.instagram.com/epoxy_wood_studio',
   label: 'Слідкуйте за нами в Instagram',
 };
