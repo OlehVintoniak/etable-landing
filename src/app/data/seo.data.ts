@@ -5,7 +5,7 @@ import { PRODUCTS } from './products.data';
 const CANONICAL_BASE = 'https://www.korinna.store';
 
 export const HOME_SEO_CONFIG: PageSeoConfig = {
-  title: `${COMPANY_INFO.name} — Store`,
+  title: `Столи з епоксидної смоли та натурального дерева | Коріння`,
   description:
     `${COMPANY_INFO.name} — авторські столи з епоксидної смоли та твердих порід дерева, натхненні українською природою. Ручна робота. Замовлення з України.`,
   canonicalUrl: `${CANONICAL_BASE}/`,
